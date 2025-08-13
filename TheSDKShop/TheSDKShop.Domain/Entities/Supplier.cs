@@ -1,4 +1,4 @@
-﻿namespace TheSDKShop.Domain
+﻿namespace TheSDKShop.Domain.Entities
 {
     public class Supplier
     {
@@ -13,5 +13,11 @@
         public string State { get; set; }
 
         public string PostalCode { get; set; }
+
+        public DateTime CreatedOn { get; set; }
+
+        public DateTime UpdatedOn { get; set; }
+
+        public List<Product> Products { get; set; }
     }
 }

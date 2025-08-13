@@ -1,4 +1,4 @@
-﻿namespace TheSDKShop.Domain
+﻿namespace TheSDKShop.Domain.Entities
 {
     public class ProductReview
     {
@@ -15,5 +15,9 @@
         public DateTime CreatedOn { get; set; }
 
         public DateTime UpdatedOn { get; set; }
+
+        public Product Product { get; set; }
+
+        public User User { get; set; }
     }
 }

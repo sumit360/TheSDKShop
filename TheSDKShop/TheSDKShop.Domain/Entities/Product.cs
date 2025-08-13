@@ -1,8 +1,10 @@
-﻿namespace TheSDKShop.Domain
+﻿namespace TheSDKShop.Domain.Entities
 {
     public class Product
     {
         public int Id { get; set; }
+
+        public int CategoryId { get; set; }
 
         public string Title { get; set; }
 
@@ -19,5 +21,11 @@
         public int CreatedBy { get; set; }
 
         public int UpdatedBy { get; set; }
+
+        public ProductCategory Category { get; set; }
+
+        public Supplier Supplier { get; set; }
+
+        public List<ProductReview> ProductReviews { get; set; }
     }
 }
